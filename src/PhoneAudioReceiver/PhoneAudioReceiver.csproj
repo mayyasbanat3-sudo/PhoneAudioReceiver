@@ -9,6 +9,7 @@
     <Nullable>enable</Nullable>
     <AssemblyName>PhoneAudioReceiver</AssemblyName>
     <RootNamespace>PhoneAudioReceiver</RootNamespace>
+    <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
     <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
     <InvariantGlobalization>true</InvariantGlobalization>
     <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
