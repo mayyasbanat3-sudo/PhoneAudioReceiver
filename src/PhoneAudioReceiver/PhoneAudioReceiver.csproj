@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>PhoneAudioReceiver</AssemblyName>
+    <RootNamespace>PhoneAudioReceiver</RootNamespace>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <Version>0.1.0</Version>
+    <Product>Phone Audio Receiver</Product>
+    <Authors>Mayyas Banat</Authors>
+    <Company>Mayyas Banat</Company>
+    <Copyright>Copyright © 2026 Mayyas Banat</Copyright>
+    <Description>Plays iPhone audio through PC headphones over Bluetooth.</Description>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+<Project>
+  <!-- Keeps build output on a short path so deep project folders don't hit the 260-character limit. -->
+  <PropertyGroup>
+    <ShortBuildRoot>$(TEMP)\PhoneAudioReceiver.build\</ShortBuildRoot>
+    <BaseIntermediateOutputPath>$(ShortBuildRoot)obj\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(ShortBuildRoot)bin\</BaseOutputPath>
+  </PropertyGroup>
+</Project>
