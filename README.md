@@ -4,11 +4,12 @@
 
 # Phone Audio Receiver
 
-**Hear your iPhone through your PC headphones, over Bluetooth.**<br/>
+**Hear your iPhone or Android phone through your PC headphones, over Bluetooth.**<br/>
 A tiny Windows tray app that stays out of your way while you game.
 
 [![Release](https://img.shields.io/github/v/release/mayyasbanat3-sudo/PhoneAudioReceiver?color=7A5CFF&label=release)](https://github.com/mayyasbanat3-sudo/PhoneAudioReceiver/releases/latest)
 [![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows&logoColor=white)](#requirements)
+[![Phones](https://img.shields.io/badge/phones-iPhone%20%7C%20Android-8B5CF6)](#requirements)
 [![.NET](https://img.shields.io/badge/.NET-8-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22C55E)](LICENSE)
 
@@ -29,14 +30,15 @@ A tiny Windows tray app that stays out of your way while you game.
 ## Why
 
 Watching TikTok or YouTube on your phone while gaming usually means taking your headset off.
-Phone Audio Receiver turns your PC into a Bluetooth speaker for your iPhone: the phone's sound
-plays in your PC headphones, mixed with your game.
+Phone Audio Receiver turns your PC into a Bluetooth speaker for your iPhone or Android phone:
+the phone's sound plays in your PC headphones, mixed with your game.
 
 It does one thing, quietly, with **zero CPU use while it sits in the tray**.
 
 ## Features
 
-- 🎧 **iPhone audio in your PC headphones**: TikTok, YouTube, music, anything with sound.
+- 🎧 **Phone audio in your PC headphones**: TikTok, YouTube, music, anything with sound.
+- 📱 **iPhone and Android**: works with any phone that streams standard Bluetooth audio (A2DP).
 - 🔁 **Auto-connect and auto-reconnect**: at launch, after the phone drops, and after the PC wakes from sleep.
 - 📊 **Phone-only level meter**: shows the phone's audio, never your game's.
 - 🌗 **Light and dark themes** with a one-click toggle.
@@ -52,14 +54,14 @@ Phone Audio Receiver asks Windows to open that link through the
 decodes and plays the audio on your default output device.
 
 ```
-iPhone ──A2DP (AAC/SBC)──▶ Bluetooth adapter ──▶ Windows A2DP sink ──▶ default output ──▶ headphones
+ Phone ──A2DP (AAC/SBC)──▶ Bluetooth adapter ──▶ Windows A2DP sink ──▶ default output ──▶ headphones
                                                        ▲
                                      Phone Audio Receiver opens, keeps and restores the link
 ```
 
 Because the app never touches the audio samples, it adds **no latency** and **cannot cause
-crackling**. Bluetooth audio itself has about 150–250 ms of delay; iOS delays video by the same
-amount, so lip-sync in TikTok and YouTube stays correct. Your game audio does not go through
+crackling**. Bluetooth audio itself has about 150–250 ms of delay; iOS and Android delay video by
+the same amount, so lip-sync in TikTok and YouTube stays correct. Your game audio does not go through
 this path and is not delayed at all.
 
 ## Download
@@ -74,7 +76,11 @@ this path and is not delayed at all.
 
 - Windows 11, or Windows 10 version 2004 or later (no acrylic backdrop on Windows 10)
 - A Bluetooth adapter (built-in or USB)
-- An iPhone (or any phone that can send Bluetooth audio)
+- An iPhone or Android phone
+
+> **Tested on:** iPhone. Android phones use the same standard Bluetooth audio profile (A2DP), so
+> they work the same way; Android testing is in progress. Tried it on your phone? Let me know in an
+> [issue](https://github.com/mayyasbanat3-sudo/PhoneAudioReceiver/issues) or on Instagram.
 
 ## Usage
 
@@ -185,13 +191,14 @@ You may use, modify and share this project, as long as the copyright notice and 
 
 ## بالعربي
 
-**Phone Audio Receiver** تطبيق صغير لويندوز بيشغّل صوت الآيفون (تيك توك، يوتيوب، موسيقى) على
-سماعة الكمبيوتر عبر البلوتوث، لحتى ما تضطر تشلح السماعة وانت عم تلعب.
+**Phone Audio Receiver** تطبيق صغير لويندوز بيشغّل صوت جوالك، آيفون أو أندرويد (تيك توك، يوتيوب،
+موسيقى)، على سماعة الكمبيوتر عبر البلوتوث، لحتى ما تضطر تشلح السماعة وانت عم تلعب.
 
 - **التحميل:** نزّل الملف المضغوط من صفحة
   [الإصدارات](https://github.com/mayyasbanat3-sudo/PhoneAudioReceiver/releases/latest)، فك الضغط، وشغّل
   `PhoneAudioReceiver.exe`. ما بيحتاج تثبيت أي شي.
-- **أول مرة:** اربط الآيفون بالكمبيوتر من إعدادات البلوتوث، وبعدها التطبيق بيتصل لحاله.
+- **أول مرة:** اربط جوالك بالكمبيوتر من إعدادات البلوتوث، وبعدها التطبيق بيتصل لحاله.
+- **الجوالات:** آيفون وأندرويد. انجرّب على آيفون، وتجربة أندرويد قيد التنفيذ.
 - **خفيف:** ما بيستهلك معالج وهو بالخلفية، وما بيستخدم كرت الشاشة أبداً.
 - **التصميم:** واجهة ويندوز 11 شبه شفافة، مع وضع فاتح وداكن.
 
