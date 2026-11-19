@@ -14,6 +14,10 @@ static class Program
             return;
         }
 
+        // A small static window renders fine on the CPU; this keeps the GPU driver (and its memory)
+        // out of the process and leaves the graphics card entirely to games.
+        System.Windows.Media.RenderOptions.ProcessRenderMode = System.Windows.Interop.RenderMode.SoftwareOnly;
+
         var app = new Application { ShutdownMode = ShutdownMode.OnExplicitShutdown };
         var settings = Settings.Load();        Theme.Initialize(app, settings.DarkMode ?? Theme.SystemPrefersDark());
 
