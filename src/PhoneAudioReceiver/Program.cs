@@ -1,3 +1,5 @@
+using System.Windows;
+
 namespace PhoneAudioReceiver;
 
 static class Program
@@ -12,7 +14,11 @@ static class Program
             return;
         }
 
-        ApplicationConfiguration.Initialize();
-        Application.Run(new MainForm(showSignal, startHidden: args.Contains("--minimized")));
+        var app = new Application { ShutdownMode = ShutdownMode.OnExplicitShutdown };
+        var settings = Settings.Load();        Theme.Initialize(app, settings.DarkMode ?? Theme.SystemPrefersDark());
+
+        var window = new MainWindow(settings, showSignal);
+        if (!args.Contains("--minimized")) window.Show();
+        app.Run();
     }
 }

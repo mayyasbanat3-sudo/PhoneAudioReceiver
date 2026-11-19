@@ -1,0 +1,14 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="WindowTint" Color="#30101016" />
+    <SolidColorBrush x:Key="WindowFallback" Color="#FF1B1B21" />
+    <SolidColorBrush x:Key="TextPrimary" Color="#FFF5F5FA" />
+    <SolidColorBrush x:Key="TextSecondary" Color="#FFA4A7B8" />
+    <SolidColorBrush x:Key="CardFill" Color="#12FFFFFF" />
+    <SolidColorBrush x:Key="CardBorder" Color="#1AFFFFFF" />
+    <SolidColorBrush x:Key="HoverFill" Color="#17FFFFFF" />
+    <SolidColorBrush x:Key="TrackBrush" Color="#1FFFFFFF" />
+    <SolidColorBrush x:Key="SwitchOffBorder" Color="#70FFFFFF" />
+    <SolidColorBrush x:Key="SwitchOffThumb" Color="#D0FFFFFF" />
+    <SolidColorBrush x:Key="DividerBrush" Color="#14FFFFFF" />
+</ResourceDictionary>

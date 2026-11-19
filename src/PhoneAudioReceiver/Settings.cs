@@ -1,3 +1,4 @@
+using System.IO;
 using System.Text.Json;
 using Microsoft.Win32;
 
@@ -7,6 +8,7 @@ sealed class Settings
 {
     public string? DeviceId { get; set; }
     public bool AutoConnect { get; set; } = true;
+    public bool? DarkMode { get; set; }
 
     static readonly string Dir = Path.Combine(
         Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "PhoneAudioReceiver");
